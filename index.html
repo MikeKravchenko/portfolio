@@ -37,12 +37,6 @@
 	<style>
 		/* Critical CSS for above-the-fold content */
 		html{font-size:10px}body{margin:0;background:#151515;font-family:"lora-regular",serif;font-size:1.7rem;line-height:3rem;color:#6e6e6e}*{box-sizing:border-box}header{position:fixed;width:100%;min-height:66px;z-index:600;background:#000}#intro{background:#151515 url(../images/nightsky.jpg) no-repeat center bottom;background-size:cover;background-attachment:fixed;width:100%;height:100%;min-height:720px;display:table;position:relative;text-align:center}.intro-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:#111111;opacity:.50}.intro-content{display:table-cell;vertical-align:middle;text-align:center;transform:translateY(-2.1rem)}.intro-content h1{color:#FFFFFF;font-family:"poppins-medium",sans-serif;font-size:8.4rem;line-height:1.071;max-width:900px;margin-top:0;margin-bottom:.6rem;margin-left:auto;margin-right:auto;text-shadow:0 0 20px rgba(0,0,0,0.5)}.intro-content h5{color:#cc005f;font-family:"poppins-bold",sans-serif;font-size:2.3rem;line-height:1.565;margin-bottom:0;text-transform:uppercase;letter-spacing:.3rem;text-shadow:0 0 6px rgba(0,0,0,0.2)}
-		
-		/* Font display fix for Font Awesome */
-		@font-face {
-			font-family: 'FontAwesome';
-			font-display: swap;
-		}
 	</style>
 	
 	<!-- CSS
@@ -67,16 +61,11 @@
 	<link rel="manifest" href="/manifest.json">
 	<meta name="theme-color" content="#FF0077">
 	
-	<!-- Preconnect to external domains -->
-	<link rel="preconnect" href="https://www.google-analytics.com">
-	<link rel="preconnect" href="https://www.googletagmanager.com">
-	
 	<!-- Preload critical fonts -->
 	<link rel="preload" href="fonts/lora/lora-regular-webfont.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="fonts/poppins/poppins-semibold-webfont.woff" as="font" type="font/woff" crossorigin>
 	
-	<link rel="preload" href="css/font-awesome/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css"></noscript>
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	
 	<!-- Structured Data -->
 	<script type="application/ld+json">
@@ -181,9 +170,9 @@
 				<div class="intro-info">
 
 					<picture>
-					<source srcset="images/responsive/1d-90w.webp 90w, images/responsive/1d-180w.webp 180w" sizes="90px" type="image/webp">
+					<source srcset="images/1d.webp" type="image/webp">
 					<source srcset="images/1d.jpg" type="image/jpeg">
-					<img src="images/1d.jpg" alt="Profile Picture" width="90" height="90">
+					<img src="images/1d.jpg" alt="Profile Picture">
 				</picture>
 
 					<p class="lead">Experience at intersection of DevOps, backend/frontend, data and ML.<br>Core: 6
@@ -293,11 +282,9 @@
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
 							<picture>
-								<source srcset="images/responsive/Robot-400w.webp 400w, images/responsive/Robot-800w.webp 800w, images/responsive/Robot-1200w.webp 1200w" 
-								        sizes="(max-width: 600px) 100vw, (max-width: 768px) 50vw, 400px" 
-								        type="image/webp">
+								<source srcset="images/portfolio/Robot.webp" type="image/webp">
 								<source srcset="images/portfolio/Robot.jpg" type="image/jpeg">
-								<img src="images/portfolio/Robot.jpg" alt="Img via Pixabay" width="400" height="300">
+								<img src="images/portfolio/Robot.jpg" alt="Img via Pixabay">
 							</picture>
 							<a href="#modal-05" class="overlay">
 								<div class="folio-item-table">
@@ -317,7 +304,7 @@
 							<picture>
 								<source srcset="images/portfolio/georgian.webp" type="image/webp">
 								<source srcset="images/portfolio/georgian.jpg" type="image/jpeg">
-								<img src="images/portfolio/georgian.jpg" alt="Img via Pixabay" width="400" height="300">
+								<img src="images/portfolio/georgian.jpg" alt="Img via Pixabay">
 							</picture>
 							<a href="#modal-06" class="overlay">
 								<div class="folio-item-table">
@@ -338,7 +325,7 @@
 							<picture>
 								<source srcset="images/portfolio/visio.webp" type="image/webp">
 								<source srcset="images/portfolio/visio.PNG" type="image/png">
-								<img src="images/portfolio/visio.PNG" alt="Img via Pixabay" width="400" height="300">
+								<img src="images/portfolio/visio.PNG" alt="Img via Pixabay">
 							</picture>
 							<a href="#modal-03" class="overlay">
 								<div class="folio-item-table">
@@ -358,7 +345,7 @@
 							<picture>
 								<source srcset="images/portfolio/cottage.webp" type="image/webp">
 								<source srcset="images/portfolio/cottage.jpg" type="image/jpeg">
-								<img src="images/portfolio/cottage.jpg" alt="Img via Pixabay" width="400" height="300">
+								<img src="images/portfolio/cottage.jpg" alt="Img via Pixabay">
 							</picture>
 							<a href="#modal-04" class="overlay">
 								<div class="folio-item-table">
@@ -377,7 +364,7 @@
 							<picture>
 								<source data-srcset="images/portfolio/FindMe.webp" type="image/webp">
 								<source data-srcset="images/portfolio/FindMe.jpg" type="image/jpeg">
-								<img data-src="images/portfolio/FindMe.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" class="lazy" alt="Image via Pixabay" width="400" height="300">
+								<img data-src="images/portfolio/FindMe.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" class="lazy" alt="Image via Pixabay">
 							</picture>
 							<a href="#modal-01" class="overlay">
 								<div class="folio-item-table">
@@ -394,7 +381,7 @@
 							<picture>
 								<source data-srcset="images/portfolio/speech2.webp" type="image/webp">
 								<source data-srcset="images/portfolio/speech2.jpg" type="image/jpeg">
-								<img data-src="images/portfolio/speech2.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" class="lazy" alt="Img via Pixabay" width="400" height="300">
+								<img data-src="images/portfolio/speech2.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" class="lazy" alt="Img via Pixabay">
 							</picture>
 							<a href="#modal-02" class="overlay">
 								<div class="folio-item-table">
@@ -1177,19 +1164,6 @@
 	
 	<script id="TelegramLiveChatLoader" data-bot="0F3F0E54-F1DB-11E9-B7ED-121B23E822B5"
 		src="//livechatbot.net/assets/chat/js/loader.js" async></script>
-	
-	<!-- Service Worker Registration -->
-	<script>
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', function() {
-				navigator.serviceWorker.register('/sw.js').then(function(registration) {
-					console.log('ServiceWorker registration successful');
-				}, function(err) {
-					console.log('ServiceWorker registration failed: ', err);
-				});
-			});
-		}
-	</script>
 	
 	<!-- Google Analytics - Loaded last for performance -->
 	<script>
