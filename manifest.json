@@ -1,0 +1,16 @@
+{
+  "name": "Mike Kravchenko - DevOps & SRE Portfolio",
+  "short_name": "MK Portfolio",
+  "description": "Portfolio showcasing DevOps, SRE, and infrastructure engineering projects",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#151515",
+  "theme_color": "#FF0077",
+  "icons": [
+    {
+      "src": "/images/ABLogoImg.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

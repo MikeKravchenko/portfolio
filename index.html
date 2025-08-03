@@ -16,23 +16,23 @@
 	<!--- basic page needs
    ================================================== -->
 	<meta charset="utf-8">
-	<title>Mike Kravchenko - Data Scientist & Full Stack Developer Portfolio</title>
-	<meta name="description" content="Mike Kravchenko's portfolio showcasing data science projects, machine learning solutions, and full-stack development work. Explore my GitHub repositories and professional experience.">
+	<title>Mike Kravchenko - DevOps, SRE & Infrastructure Engineer</title>
+	<meta name="description" content="Mike Kravchenko's portfolio showcasing DevOps, Site Reliability Engineering, infrastructure automation, and data engineering projects. Explore my GitHub repositories and professional experience.">
 	<meta name="author" content="Mike Kravchenko">
-	<meta name="keywords" content="Mike Kravchenko, data scientist, full stack developer, machine learning, AI, portfolio, GitHub, Python, JavaScript">
+	<meta name="keywords" content="Mike Kravchenko, DevOps, SRE, Site Reliability Engineer, Infrastructure Engineer, Kubernetes, Docker, CI/CD, Cloud, AWS, Data Engineering, AI, portfolio, GitHub">
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://mikekravchenko.com/">
-	<meta property="og:title" content="Mike Kravchenko - Data Scientist & Full Stack Developer">
-	<meta property="og:description" content="Explore my portfolio of data science and development projects">
+	<meta property="og:title" content="Mike Kravchenko - DevOps, SRE & Infrastructure Engineer">
+	<meta property="og:description" content="Explore my portfolio of DevOps, infrastructure automation, and data engineering projects">
 	<meta property="og:image" content="images/1d.jpg">
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://mikekravchenko.com/">
-	<meta property="twitter:title" content="Mike Kravchenko - Data Scientist & Full Stack Developer">
-	<meta property="twitter:description" content="Explore my portfolio of data science and development projects">
+	<meta property="twitter:title" content="Mike Kravchenko - DevOps, SRE & Infrastructure Engineer">
+	<meta property="twitter:description" content="Explore my portfolio of DevOps, infrastructure automation, and data engineering projects">
 	<meta property="twitter:image" content="images/1d.jpg">
 
 	<!-- mobile specific metas
@@ -53,6 +53,8 @@
 	<!-- favicons
 	================================================== -->
 	<link rel="icon" type="image/png" href="images/ABLogoImg.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#FF0077">
 	
 	<!-- Preload critical fonts -->
 	<link rel="preload" href="fonts/lora/lora-regular-webfont.woff" as="font" type="font/woff" crossorigin>
@@ -61,6 +63,24 @@
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141026645-1"></script>
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Mike Kravchenko",
+		"jobTitle": "DevOps/SRE & Infrastructure Engineer",
+		"description": "Experienced DevOps and Site Reliability Engineer specializing in infrastructure automation, cloud architecture, and data engineering",
+		"url": "https://mikekravchenko.com/",
+		"sameAs": [
+			"https://github.com/MikeKravchenko",
+			"https://www.linkedin.com/in/mike-kravchenko/"
+		],
+		"knowsAbout": ["DevOps", "Site Reliability Engineering", "Infrastructure as Code", "Kubernetes", "Docker", "CI/CD", "Cloud Computing", "AWS", "Data Engineering", "Machine Learning"],
+		"image": "https://mikekravchenko.com/images/1d.jpg"
+	}
+	</script>
 
 
 </head>
@@ -110,8 +130,8 @@
 					<h1>Mike Kravchenko</h1>
 
 					<p class="intro-position">
-	   				<span>Infrastructure/DevOps</span>
-					   <span>Site Reliability</span>
+	   				<span>DevOps/SRE</span>
+					   <span>Infrastructure/</span>
 	   				<span>Data Engineering and AI</span> 
 					</p>
 
@@ -146,7 +166,11 @@
 
 				<div class="intro-info">
 
+					<picture>
+					<source srcset="images/1d.webp" type="image/webp">
+					<source srcset="images/1d.jpg" type="image/jpeg">
 					<img src="images/1d.jpg" alt="Profile Picture">
+				</picture>
 
 					<p class="lead">Experience at intersection of DevOps, backend/frontend, data and ML.<br>Core: 6
 						years of Enterprise Experience<br>Terraform | Kubernetes| Python and more.</p>
@@ -254,7 +278,11 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/Robot.jpg" alt="Img via Pixabay">
+							<picture>
+								<source srcset="images/portfolio/Robot.webp" type="image/webp">
+								<source srcset="images/portfolio/Robot.jpg" type="image/jpeg">
+								<img src="images/portfolio/Robot.jpg" alt="Img via Pixabay">
+							</picture>
 							<a href="#modal-05" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -270,7 +298,11 @@
 					</div> <!-- /folio-item -->
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/georgian.jpg" alt="Img via Pixabay">
+							<picture>
+								<source srcset="images/portfolio/georgian.webp" type="image/webp">
+								<source srcset="images/portfolio/georgian.jpg" type="image/jpeg">
+								<img src="images/portfolio/georgian.jpg" alt="Img via Pixabay">
+							</picture>
 							<a href="#modal-06" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -287,7 +319,11 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/visio.PNG" alt="Img via Pixabay">
+							<picture>
+								<source srcset="images/portfolio/visio.webp" type="image/webp">
+								<source srcset="images/portfolio/visio.PNG" type="image/png">
+								<img src="images/portfolio/visio.PNG" alt="Img via Pixabay">
+							</picture>
 							<a href="#modal-03" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -303,7 +339,11 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img src="images/portfolio/cottage.jpg" alt="Img via Pixabay">
+							<picture>
+								<source srcset="images/portfolio/cottage.webp" type="image/webp">
+								<source srcset="images/portfolio/cottage.jpg" type="image/jpeg">
+								<img src="images/portfolio/cottage.jpg" alt="Img via Pixabay">
+							</picture>
 							<a href="#modal-04" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -320,7 +360,11 @@
 
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img data-src="images/portfolio/FindMe.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" class="lazy" alt="Image via Pixabay">
+							<picture>
+								<source data-srcset="images/portfolio/FindMe.webp" type="image/webp">
+								<source data-srcset="images/portfolio/FindMe.jpg" type="image/jpeg">
+								<img data-src="images/portfolio/FindMe.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" class="lazy" alt="Image via Pixabay">
+							</picture>
 							<a href="#modal-01" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -333,7 +377,11 @@
 					</div> <!-- /folio-item -->
 					<div class="bgrid folio-item">
 						<div class="item-wrap">
-							<img data-src="images/portfolio/speech2.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" class="lazy" alt="Img via Pixabay">
+							<picture>
+								<source data-srcset="images/portfolio/speech2.webp" type="image/webp">
+								<source data-srcset="images/portfolio/speech2.jpg" type="image/jpeg">
+								<img data-src="images/portfolio/speech2.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" class="lazy" alt="Img via Pixabay">
+							</picture>
 							<a href="#modal-02" class="overlay">
 								<div class="folio-item-table">
 									<div class="folio-item-cell">
@@ -1069,7 +1117,7 @@
 	
 	<!-- Lazy Loading Script -->
 	<script>
-		// Simple lazy loading implementation
+		// Enhanced lazy loading implementation with WebP support
 		document.addEventListener("DOMContentLoaded", function() {
 			var lazyImages = [].slice.call(document.querySelectorAll("img[data-src]"));
 			
@@ -1078,6 +1126,18 @@
 					entries.forEach(function(entry) {
 						if (entry.isIntersecting) {
 							let lazyImage = entry.target;
+							let picture = lazyImage.closest('picture');
+							
+							// Update source elements if in a picture element
+							if (picture) {
+								let sources = picture.querySelectorAll('source[data-srcset]');
+								sources.forEach(function(source) {
+									source.srcset = source.dataset.srcset;
+									source.removeAttribute('data-srcset');
+								});
+							}
+							
+							// Update the img element
 							lazyImage.src = lazyImage.dataset.src;
 							lazyImage.classList.add("loaded");
 							lazyImageObserver.unobserve(lazyImage);
@@ -1091,6 +1151,13 @@
 			} else {
 				// Fallback for browsers that don't support IntersectionObserver
 				lazyImages.forEach(function(lazyImage) {
+					let picture = lazyImage.closest('picture');
+					if (picture) {
+						let sources = picture.querySelectorAll('source[data-srcset]');
+						sources.forEach(function(source) {
+							source.srcset = source.dataset.srcset;
+						});
+					}
 					lazyImage.src = lazyImage.dataset.src;
 				});
 			}
@@ -1098,7 +1165,7 @@
 	</script>
 	
 	<script id="TelegramLiveChatLoader" data-bot="0F3F0E54-F1DB-11E9-B7ED-121B23E822B5"
-		src="//livechatbot.net/assets/chat/js/loader.js"></script>
+		src="//livechatbot.net/assets/chat/js/loader.js" async></script>
 </body>
 
 </html>

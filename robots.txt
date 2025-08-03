@@ -1,0 +1,14 @@
+# Robots.txt for mikekravchenko.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mikekravchenko.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow access to any admin or private directories if they exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
