@@ -6,13 +6,7 @@
 
 <head>
 
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-141026645-1');
-	</script>
+	<!-- Move analytics to end of body for better performance -->
 	<!--- basic page needs
    ================================================== -->
 	<meta charset="utf-8">
@@ -37,18 +31,29 @@
 
 	<!-- mobile specific metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Critical CSS inline for faster first paint -->
+	<style>
+		/* Critical CSS for above-the-fold content */
+		html{font-size:10px}body{margin:0;background:#151515;font-family:"lora-regular",serif;font-size:1.7rem;line-height:3rem;color:#6e6e6e}*{box-sizing:border-box}header{position:fixed;width:100%;min-height:66px;z-index:600;background:#000}#intro{background:#151515 url(../images/nightsky.jpg) no-repeat center bottom;background-size:cover;background-attachment:fixed;width:100%;height:100%;min-height:720px;display:table;position:relative;text-align:center}.intro-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:#111111;opacity:.50}.intro-content{display:table-cell;vertical-align:middle;text-align:center;transform:translateY(-2.1rem)}.intro-content h1{color:#FFFFFF;font-family:"poppins-medium",sans-serif;font-size:8.4rem;line-height:1.071;max-width:900px;margin-top:0;margin-bottom:.6rem;margin-left:auto;margin-right:auto;text-shadow:0 0 20px rgba(0,0,0,0.5)}.intro-content h5{color:#cc005f;font-family:"poppins-bold",sans-serif;font-size:2.3rem;line-height:1.565;margin-bottom:0;text-transform:uppercase;letter-spacing:.3rem;text-shadow:0 0 6px rgba(0,0,0,0.2)}
+	</style>
+	
 	<!-- CSS
    ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="preload" href="css/base.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/vendor.css">
+	</noscript>
 
 	<!-- script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+	<script src="js/pace.min.js" defer></script>
 
 	<!-- favicons
 	================================================== -->
@@ -61,8 +66,6 @@
 	<link rel="preload" href="fonts/poppins/poppins-semibold-webfont.woff" as="font" type="font/woff" crossorigin>
 	
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141026645-1"></script>
 	
 	<!-- Structured Data -->
 	<script type="application/ld+json">
@@ -95,9 +98,9 @@
 			<div class="top-bar">
 				<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-				<div class="logo">
-					<a href="index.html"></a>
-				</div>
+							<div class="logo">
+				<a href="index.html" aria-label="Mike Kravchenko - Home"></a>
+			</div>
 
 				<nav id="main-nav-wrap">
 					<ul class="main-navigation">
@@ -144,10 +147,10 @@
 		</div> <!-- /intro-content -->
 
 		<ul class="intro-social">
-			<li><a href="https://www.linkedin.com/in/mike-kravchenko/"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/MikeKravchenko"><i class="fa fa-github"></i></a></li>
-			<li><a href="https://www.facebook.com/mike.kravchenk/"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="https://www.instagram.com/mike__kravchenko/"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/mike-kravchenko/" aria-label="LinkedIn Profile"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/MikeKravchenko" aria-label="GitHub Profile"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://www.facebook.com/mike.kravchenk/" aria-label="Facebook Profile"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.instagram.com/mike__kravchenko/" aria-label="Instagram Profile"><i class="fa fa-instagram"></i></a></li>
 
 		</ul> <!-- /intro-social -->
 
@@ -349,9 +352,7 @@
 									<div class="folio-item-cell">
 										<h3 class="folio-title">Jayne's Cottages project</h3>
 										<span class="folio-types">
-											<li><span>
-													mediated by Georgian college
-												</span> </li>
+											mediated by Georgian college
 									</div>
 								</div>
 							</a>
@@ -1066,11 +1067,11 @@
 			<div class="col-six tab-full pull-right social">
 
 				<ul class="footer-social">
-					<li><a href="https://www.linkedin.com/in/mike-kravchenko/"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://github.com/MikeKravchenko"><i class="fa fa-github"></i></a></li>
-					<li><a href="https://www.facebook.com/profile.php?id=100009071329405"><i
+					<li><a href="https://www.linkedin.com/in/mike-kravchenko/" aria-label="LinkedIn Profile"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/MikeKravchenko" aria-label="GitHub Profile"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://www.facebook.com/profile.php?id=100009071329405" aria-label="Facebook Profile"><i
 								class="fa fa-facebook"></i></a></li>
-					<li><a href="https://www.instagram.com/mike__kravchenko/"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://www.instagram.com/mike__kravchenko/" aria-label="Instagram Profile"><i class="fa fa-instagram"></i></a></li>
 
 				</ul>
 
@@ -1079,7 +1080,7 @@
 			<div class="col-six tab-full">
 				<div class="copyright">
 					<span>Copyright Mike Kravchenko 2025.</span>
-					<span><a href="http://www.styleshout.com/"></a></span>
+					<span><a href="http://www.styleshout.com/" aria-label="Theme by Styleshout">Theme by Styleshout</a></span>
 				</div>
 			</div>
 
@@ -1099,9 +1100,6 @@
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js" defer></script>
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/vendor.css">
 	
 	<!-- Lazy Loading Styles -->
 	<style>
@@ -1166,6 +1164,22 @@
 	
 	<script id="TelegramLiveChatLoader" data-bot="0F3F0E54-F1DB-11E9-B7ED-121B23E822B5"
 		src="//livechatbot.net/assets/chat/js/loader.js" async></script>
+	
+	<!-- Google Analytics - Loaded last for performance -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-141026645-1');
+		
+		// Load GA script after page load
+		window.addEventListener('load', function() {
+			var script = document.createElement('script');
+			script.async = true;
+			script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-141026645-1';
+			document.body.appendChild(script);
+		});
+	</script>
 </body>
 
 </html>
