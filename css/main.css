@@ -2657,3 +2657,5 @@ footer .copyright span:last-child::after {
 @media only screen and (max-width:768px) {
 	#resume .timeline-ico.logo-badge.dual { margin-left:0; width:auto; height:6.4rem; }
 }
+
+#resume .timeline-ico.logo-badge img[alt^="Upchain"] { width:78%; height:78%; }
