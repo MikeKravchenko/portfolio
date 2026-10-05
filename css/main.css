@@ -2597,3 +2597,24 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* intro photo: large landscape image above the intro text */
+.intro-info .intro-photo { display:block; max-width:760px; margin:0 auto 3.6rem; }
+.intro-info .intro-photo img {
+	float:none; display:block; width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; object-position:50% 40%;
+	border-radius:14px; margin:0; box-shadow:0 18px 40px rgba(0,0,0,.35);
+}
+.intro-info .lead { padding-left:0; text-align:center; }
+@media only screen and (max-width:768px) {
+	.intro-info .intro-photo img { width:100%; height:auto; border-radius:10px; }
+	.intro-info .lead { padding-left:0; }
+}
+
+/* profile as compact contact badges */
+.about-content .profile-name { font-family:"poppins-bold",sans-serif; font-size:2rem; color:#222; margin:0 0 1.2rem; }
+.contact-badges { list-style:none; margin:0 0 3rem; padding:0; }
+.contact-badges li { display:flex; align-items:center; gap:1.2rem; margin:0 0 1rem; padding:0; font-size:1.6rem; line-height:1.4; }
+.contact-badges svg { width:2.2rem; height:2.2rem; flex:none; fill:#313131; }
+.contact-badges .li-in svg { fill:none; }
+.contact-badges a, .contact-badges span { color:#313131; word-break:break-all; }
+.contact-badges a:hover { color:#e0255d; }
